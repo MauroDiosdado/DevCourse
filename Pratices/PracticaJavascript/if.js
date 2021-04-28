@@ -15,4 +15,4 @@ else{
 
 var numero = 1;
 
-var resultado = numero === 1 ? "si soy un uno":"No soy un uno";
+var resultado = numero === 1 ? "si soy un uno":"No soy un uno!!!";
