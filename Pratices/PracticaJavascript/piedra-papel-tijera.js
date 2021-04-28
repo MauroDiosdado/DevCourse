@@ -10,6 +10,6 @@ var jugar = function(usuario1, usuario2){
         console.log("Empate!")
     }
     else{
-        console.log("Gana jugador 3");
+        console.log("Gana jugador 3!!!");
     }
 }
