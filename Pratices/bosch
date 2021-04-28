@@ -1,0 +1,399 @@
+Feedback Type:
+Frown (Error)
+
+Error Message:
+Object reference not set to an instance of an object.
+
+Stack Trace:
+   at Microsoft.Mashup.Evaluator.ChannelMessenger.CreateChannel()
+   at Microsoft.PowerBI.Client.OleDbProvider.PowerBIMashupDataSource.EvaluationSession.Dispose()
+   at Microsoft.Mashup.Host.ProviderShared.PackageMashupEvaluator.<>c__DisplayClass7_0.<Evaluate>b__1(Object o)
+   at Microsoft.Mashup.Evaluator.Interface.InvokeManyAction`1.CheckDone()
+   at Microsoft.Mashup.OleDbProvider.DataHost.MashupEvaluator.<>c__DisplayClass4_1.<Evaluate>b__1()
+   at Microsoft.Mashup.OleDbProvider.DataHost.AsyncResultIDataReaderSourceHelper.InvokeThenOnDispose(Action`1 callback, AsyncResult`1 result, Action action)
+   at Microsoft.Mashup.OleDbProvider.DataHost.MashupEvaluator.<>c__DisplayClass4_0.<Evaluate>b__0(EvaluationResult2`1 result)
+   at Microsoft.Mashup.Evaluator.Interface.EvaluationResultExtensions.InvokeThenOnDispose(Action`1 callback, EvaluationResult2`1 result, Action action)
+   at Microsoft.Mashup.Evaluator.Interface.EvaluationResultExtensions.InvokeThenOnDispose[T](Action`1 callback, EvaluationResult2`1 result, Action action)
+   at Microsoft.Mashup.Evaluator.LimitedDocumentEvaluatorFactory.Evaluation`1.Complete(EvaluationResult2`1 result)
+   at Microsoft.Mashup.Evaluator.Interface.EvaluationResultExtensions.InvokeThenOnDispose(Action`1 callback, EvaluationResult2`1 result, Action action)
+   at Microsoft.Mashup.Evaluator.Interface.EvaluationResultExtensions.InvokeThenOnDispose[T](Action`1 callback, EvaluationResult2`1 result, Action action)
+   at Microsoft.Mashup.Evaluator.DocumentEvaluator.<>c__DisplayClass7_0`1.<BeginGetResult>b__0(EvaluationResult2`1 result)
+   at Microsoft.Mashup.Evaluator.Interface.EvaluationResultExtensions.InvokeThenOnDispose(Action`1 callback, EvaluationResult2`1 result, Action action)
+   at Microsoft.Mashup.Evaluator.Interface.EvaluationResultExtensions.InvokeThenOnDispose[T](Action`1 callback, EvaluationResult2`1 result, Action action)
+   at Microsoft.Mashup.Evaluator.LimitedDocumentEvaluatorFactory.Evaluation`1.Complete(EvaluationResult2`1 result)
+   at Microsoft.Mashup.Evaluator.RemoteDocumentEvaluator.RemoteEvaluation`1.TryComplete(EvaluationResult2`1 result)
+   at Microsoft.Mashup.Evaluator.RemoteDocumentEvaluator.RemoteEvaluation`1.TryCompleteWithException(Exception exception)
+   at Microsoft.Mashup.Evaluator.RemoteDocumentEvaluator.RemoteEvaluation.Evaluate(Boolean enableFirewall)
+   at Microsoft.Mashup.Evaluator.EvaluatorThreadPool.EvaluatorThread(Object state)
+   at Microsoft.Mashup.Evaluator.SafeThread2.<>c__DisplayClass9_0.<CreateAction>b__0(Object o)
+
+Stack Trace Message:
+Object reference not set to an instance of an object.
+
+Invocation Stack Trace:
+   at Microsoft.Mashup.Host.Document.ExceptionExtensions.GetCurrentInvocationStackTrace()
+   at Microsoft.Mashup.Client.UI.Shared.StackTraceInfo..ctor(String exceptionStackTrace, String invocationStackTrace, String exceptionMessage)
+   at Microsoft.PowerBI.Client.Windows.Telemetry.PowerBIUserFeedbackServices.GetStackTraceInfo(Exception e)
+   at Microsoft.PowerBI.Client.Windows.Telemetry.PowerBIUserFeedbackServices.ReportException(IWindowHandle activeWindow, IUIHost uiHost, FeedbackPackageInfo feedbackPackageInfo, Exception e, Boolean useGDICapture)
+   at Microsoft.Mashup.Client.UI.Shared.UnexpectedExceptionHandler.<>c__DisplayClass14_0.<HandleException>b__0()
+   at Microsoft.Mashup.Host.Document.SynchronizationContextExtensions.<>c__DisplayClass0_1.<SendAndMarshalExceptions>b__0(Object null)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at Microsoft.PowerBI.Client.Windows.Ux.CefHtmlForm.<>n__0(IWindowHandle windowHandle)
+   at Microsoft.Mashup.Client.UI.Shared.WindowManager.ShowModal[T](T dialog, Func`1 showModalFunction)
+   at Microsoft.PowerBI.Client.Windows.FloatingDialog.KoLoadToReportDialog.TryShowDialog(Report report, IExceptionHandler exceptionHandler, IPowerBIWindowService windowService, IQueryServices queryServices, IModelingService modelingService, IUIHost uiHost, LocalizedString title, LoadToModelContext loadToModelContext, IEventAggregationService eventAggregationService)
+   at Microsoft.PowerBI.Client.Windows.Commands.ApplicationCommands.DataImportCommands.RefreshAllQueries(IPowerBIWindowService windowService, IExceptionHandler exceptionHandler, RefreshAllQueriesParameters parameters)
+   at Microsoft.Mashup.Host.Document.ExceptionHandlerExtensions.HandleExceptions(IExceptionHandler exceptionHandler, Action action)
+   at Microsoft.Practices.Prism.Commands.DelegateCommandBase.<>c__DisplayClass4_0.<.ctor>b__0(Object arg)
+   at Microsoft.Practices.Prism.Commands.DelegateCommandBase.<Execute>d__10.MoveNext()
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.Practices.Prism.Commands.DelegateCommandBase.Execute(Object parameter)
+   at Microsoft.Practices.Prism.Commands.DelegateCommand`1.<Execute>d__5.MoveNext()
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.Practices.Prism.Commands.DelegateCommand`1.Execute(T parameter)
+   at Microsoft.PowerBI.Client.Windows.Commands.CompositeCommand`1.Execute(ICommand command, Object parameter)
+   at Microsoft.Practices.Prism.Commands.CompositeCommand.Execute(Object parameter)
+   at Microsoft.PowerBI.Client.Windows.Commands.CompositeCommand`1.Execute(T parameter)
+   at Microsoft.Mashup.Client.UI.Windows.Ribbon.RibbonCommandHandler.Execute(UInt32 commandId, CommandExecutionVerb verb, PropertyKeyRef keyRef, PropVariantRef currentValue, IUISimplePropertySet commandExecutionProperties)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at Microsoft.Mashup.Client.UI.Shared.WebDialogs.WebDialog.<>n__0(IWindowHandle owner)
+   at Microsoft.Mashup.Client.UI.Shared.WindowManager.ShowModal[T](T dialog, Func`1 showModalFunction)
+   at Microsoft.PowerBI.Client.Program.<>c__DisplayClass2_0.<Main>b__1()
+   at Microsoft.PowerBI.Client.Windows.IExceptionHandlerExtensions.<>c__DisplayClass3_0.<HandleExceptionsWithNestedTasks>b__0()
+   at Microsoft.Mashup.Host.Document.ExceptionHandlerExtensions.HandleExceptions(IExceptionHandler exceptionHandler, Action action)
+   at Microsoft.PowerBI.Client.Program.Main(String[] args)
+
+
+PowerBINonFatalError:
+{"AppName":"PBIDesktop","AppVersion":"2.81.5831.1181","ModuleName":"","Component":"Microsoft.Mashup.Evaluator.ChannelMessenger","Error":"Microsoft.Mashup.Host.Document.SerializedException - System.NullReferenceException","MethodDef":"CreateChannel","ErrorOffset":""}
+
+Snapshot Trace Logs:
+C:\Users\GNU1JU\AppData\Local\Microsoft\Power BI Desktop SSRS\FrownSnapShot533279596.zip
+
+Model Default Mode:
+Import
+
+Model Version:
+PowerBI_V1
+
+Is Report V3 Models Enabled:
+False
+
+Performance Trace Logs:
+C:\Users\GNU1JU\AppData\Local\Microsoft\Power BI Desktop SSRS\PerformanceTraces.zip
+
+Enabled Preview Features:
+PBI_NewWebTableInference
+PBI_hierarchicalSlicerCreation
+
+Disabled Preview Features:
+PBI_shapeMapVisualEnabled
+PBI_SpanishLinguisticsEnabled
+PBI_qnaLiveConnect
+PBI_inlineExplore
+PBI_realTimeRefresh
+PBI_showMinervaRibbon
+PBI_showMinervaViewNavigator
+PBI_v3ModelsPreview
+PBI_relativeTimeSlicer
+PBI_dataSearchCuration
+
+Disabled DirectQuery Options:
+TreatHanaAsRelationalSource
+
+Cloud:
+GlobalCloud
+
+PowerBINonFatalError_ErrorDescription:
+System.NullReferenceException
+
+Formulas:
+
+
+section Section1;
+
+shared #"BoM Release" = let
+    Source = Excel.Workbook(Web.Contents("https://sites.inside-share2.bosch.com/sites/141786/Documents/KPIs/KPI Tracking - BoM Release.xlsx"), null, true),
+    #"BoM Release_Sheet" = Source{[Item="BoM Release",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(#"BoM Release_Sheet", [PromoteAllScalars=true]),
+    #"Removed Top Rows" = Table.Skip(#"Promoted Headers",2),
+    #"Promoted Headers1" = Table.PromoteHeaders(#"Removed Top Rows", [PromoteAllScalars=true]),
+    #"Removed Blank Rows" = Table.SelectRows(#"Promoted Headers1", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {"", null}))),
+    #"Changed Type" = Table.TransformColumnTypes(#"Removed Blank Rows",{{"Requirement was received", type date}, {"SW available", type date}, {"BoM st 40* Promise", type date}, {"BoM st 30* Promise", type date}, {"AGZ in SAP", type date}, {"PTS/PAV#(lf)Expected", type date}, {"PTS/PAV input sheet", type date}, {"Software", type date}, {"PTS/PAV input sheet_2", type date}, {"PTS/PAV available", type date}, {"Manager approval for drawings", type date}, {"EWO (GM) / CN (Ford) / Ownership (FCA) in correct status or available", type date}, {"AGZ available in SAP", type date}, {"CWR Sent date", type date}, {"BoM st 30* Actuals", type date}, {"BoM st 40* Actuals", type date}, {"bom 30", type date}, {"bom 40", type date}, {"BOM 30", type date}, {"BOM40", type date}, {"Req. input", type date}, {"Software_3", type date}, {"Software2", type date}, {"pav2", type date}, {"pav", type date}, {"pav2/1", type date}, {"pav 2/2", type date}, {"agz", type date}, {"agz 2", type date}, {"cs.req.0", type date}, {"cs.sw.0", type date}, {"cs.sw.1", type date}, {"cs.pav.0", type date}, {"cs.pav.1", type date}, {"cs.st30.0", type date}, {"cs.st30.1", type date}, {"cs.st40.0", type date}, {"cs.st40.1", type date}})
+in
+    #"Changed Type";
+
+shared #"Errors in BoM Release" = let
+Source = #"BoM Release",
+#"Added Index" = Table.AddIndexColumn(Source, "Row Number" ,1),
+  #"Kept Errors" = Table.SelectRowsWithErrors(#"Added Index", {"#", "Originator*", "BU", "Product", "Customer", "Project / Platform", "MCR#(lf)Project Number", "PM or TPM", "ECU-PCM#(lf)(Optional)", "RACE", "BPN (xxxx.xxx.xxx)*", "MRD#(lf)(Optional)", "Requirement was received", "All dates were discussed and agreed? (Y/N)", "All dates were discussed and agreed? (Y/N)_1", "Software*", "PTS/PAV input sheet", "PTS/PAV#(lf)Expected", "AGZ in SAP", "BoM st 30*", "BoM st 40*", "SW available*", "PTS/PAV input sheet_2", "PTS/PAV available", "Manager approval for drawings", "EWO (GM) / CN (Ford) / Ownership (FCA) in correct status or available", "AGZ available in SAP", "CWR Sent date", "BoM status 30*", "BoM status 40*", "Comments", "bom 30", "bom 40", "BOM 30", "BOM40", "Req. input", "Software", "Software2", "software diff", "pav", "pav2", "pav diff", "pav2/1", "pav 2/2", "pav 2 diff", "agz", "agz 2", "agz diff", "cs.req.0", "cs.sw.0", "cs.sw.1", "cs.pav.0", "cs.pav.1", "cs.st30.0", "cs.st30.1", "cs.st40.0", "cs.st40.1", "cs.adt.sw", "cs.adt.pav", "cs.adt.st30", "cs.adt.st40", "cs.adt.total", "cs.sw.t", "cs.pav.t", "cs.st30.t", "cs.st40.t", "cs.status", "cs.dt.40"}),
+#"Reordered Columns" = Table.ReorderColumns(#"Kept Errors", {"Row Number", "#", "Originator*", "BU", "Product", "Customer", "Project / Platform", "MCR#(lf)Project Number", "PM or TPM", "ECU-PCM#(lf)(Optional)", "RACE", "BPN (xxxx.xxx.xxx)*", "MRD#(lf)(Optional)", "Requirement was received", "All dates were discussed and agreed? (Y/N)", "All dates were discussed and agreed? (Y/N)_1", "Software*", "PTS/PAV input sheet", "PTS/PAV#(lf)Expected", "AGZ in SAP", "BoM st 30*", "BoM st 40*", "SW available*", "PTS/PAV input sheet_2", "PTS/PAV available", "Manager approval for drawings", "EWO (GM) / CN (Ford) / Ownership (FCA) in correct status or available", "AGZ available in SAP", "CWR Sent date", "BoM status 30*", "BoM status 40*", "Comments", "bom 30", "bom 40", "BOM 30", "BOM40", "Req. input", "Software", "Software2", "software diff", "pav", "pav2", "pav diff", "pav2/1", "pav 2/2", "pav 2 diff", "agz", "agz 2", "agz diff", "cs.req.0", "cs.sw.0", "cs.sw.1", "cs.pav.0", "cs.pav.1", "cs.st30.0", "cs.st30.1", "cs.st40.0", "cs.st40.1", "cs.adt.sw", "cs.adt.pav", "cs.adt.st30", "cs.adt.st40", "cs.adt.total", "cs.sw.t", "cs.pav.t", "cs.st30.t", "cs.st40.t", "cs.status", "cs.dt.40"})
+in
+  #"Reordered Columns"
+;
+
+shared Name = let
+    Source = Excel.Workbook(Web.Contents("https://sites.inside-share2.bosch.com/sites/141786/Documents/KPIs/Nombres.xlsx"), null, true),
+    Name_Sheet = Source{[Item="Name",Kind="Sheet"]}[Data],
+    #"Changed Type" = Table.TransformColumnTypes(Name_Sheet,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}}),
+    #"Promoted Headers" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers",{{"Equipo", type text}, {"Usuario ", type text}, {"Nombre", type text}, {"Division", type text}, {"C", type text}})
+in
+    #"Changed Type1";
+
+shared Division = let
+    Source = Excel.Workbook(Web.Contents("https://sites.inside-share2.bosch.com/sites/141786/Documents/KPIs/Nombres.xlsx"), null, true),
+    Division_Sheet = Source{[Item="Division",Kind="Sheet"]}[Data],
+    #"Changed Type" = Table.TransformColumnTypes(Division_Sheet,{{"Column1", type text}}),
+    #"Promoted Headers" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers",{{"Division", type text}})
+in
+    #"Changed Type1";
+
+shared ECR = let
+    Source = Excel.Workbook(Web.Contents("https://sites.inside-share2.bosch.com/sites/141786/Documents/KPIs/KPI Tracking - ECRs.xlsx"), null, true),
+    ECR_Sheet = Source{[Item="ECR",Kind="Sheet"]}[Data],
+    #"Changed Type" = Table.TransformColumnTypes(ECR_Sheet,{{"Column1", type any}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type any}, {"Column9", type text}, {"Column10", type any}, {"Column11", type any}, {"Column12", type any}, {"Column13", type any}, {"Column14", type text}, {"Column15", type text}, {"Column16", type any}, {"Column17", type any}, {"Column18", type any}, {"Column19", type any}, {"Column20", type any}, {"Column21", type any}, {"Column22", type text}, {"Column23", type text}}),
+    #"Removed Blank Rows" = Table.SelectRows(#"Changed Type", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {"", null}))),
+    #"Removed Top Rows" = Table.Skip(#"Removed Blank Rows",1),
+    #"Promoted Headers" = Table.PromoteHeaders(#"Removed Top Rows", [PromoteAllScalars=true]),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers",{{"#", Int64.Type}, {"BU", type text}, {"Product", type text}, {"Customer & Project", type text}, {"MCR", type text}, {"Originator*", type text}, {"ECR*", type text}, {"Affected finish good*#(lf)BPN (xxxx.xxx.xxx)", type any}, {"Short reason*", type text}, {"CWR / Leepa", type any}, {"Revision with TL", type any}, {"St. 10", type date}, {"St. 20*", type date}, {"First Pass Yield ECR? (Filled by Manager)*", type text}, {"First Pass Yield BOMs? (Filled by Manager)*", type text}, {"St. 22", type date}, {"All documents available ", type date}, {"St. 24", type date}, {"St. 25", type date}, {"St. 30*", type date}, {"St. 40", type date}, {"Status#(lf)Open/Closed/Cancelled", type text}, {"Comments", type text}})
+in
+    #"Changed Type1";
+
+shared RA = let
+    Source = Excel.Workbook(Web.Contents("https://sites.inside-share2.bosch.com/sites/141786/Documents/KPIs/KPI Tracking - Risk Assesments.xlsx"), null, true),
+    RA_Sheet = Source{[Item="RA",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(RA_Sheet, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Risk Assesment Tracking", type text}, {"Column2", type any}, {"Column3", type text}, {"Column4", type any}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type any}, {"Column9", type any}, {"Column10", type any}, {"Column11", type text}, {"Column12", type any}, {"Column13", type text}, {"Column14", type text}, {"Column15", type any}, {"Column16", type text}, {"Column17", type any}, {"Column18", type any}, {"Column19", type text}, {"Column20", type text}, {"Column21", type text}, {"Column22", type text}, {"Column23", type text}, {"Column24", type text}, {"Column25", type text}, {"Column26", type any}, {"Column27", type any}, {"Column28", type any}, {"Column29", type any}, {"Column30", type any}, {"Column31", type any}, {"Column32", type any}, {"Column33", type any}, {"Column34", type any}, {"Column35", type any}, {"Column36", type any}, {"Column37", type any}, {"Column38", type any}, {"Column39", type any}, {"Column40", type any}, {"Column41", type any}, {"Column42", type any}}),
+    #"Removed Top Rows" = Table.Skip(#"Changed Type",1),
+    #"Promoted Headers1" = Table.PromoteHeaders(#"Removed Top Rows", [PromoteAllScalars=true]),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers1",{{"RA #", type text}, {"VS", type any}, {"Product", type text}, {"Affected finish good#(lf)BPN (xxxx.xxx.xxx)", type any}, {"Type", type text}, {"Customer", type text}, {"Deviation", type text}, {"Request Date", type any}, {"Due Date", type date}, {"""Finish"" date", type date}, {"Creator", type text}, {"Cost ", type any}, {"Workon #", type text}, {"Risk Level#(lf)(L|M|H)", type text}, {"PPMs", type any}, {"Length*", type text}, {"Revision with TL #(lf)(Date/Dates) ", type date}, {"Revision with Manager #(lf)(Date/Dates) ", type date}, {"FPY (TL)", type text}, {"FPY(Manager)", type text}, {"Complexity ", type text}, {"Comments (improvements)", type text}, {"Link to RA", type text}, {"Column24", type text}, {"Column25", type text}, {"Column26", type any}, {"Column27", type any}, {"Column28", type any}, {"Column29", type any}, {"Column30", type any}, {"Column31", type any}, {"Column32", type any}, {"Column33", type any}, {"Column34", type any}, {"Column35", type any}, {"Column36", type any}, {"Column37", type any}, {"Column38", type any}, {"Column39", type any}, {"Column40", type any}, {"Column41", type any}, {"Column42", type any}}),
+    #"Removed Columns" = Table.RemoveColumns(#"Changed Type1",{"Column24", "Column25", "Column26", "Column27", "Column28", "Column29", "Column30", "Column31", "Column32", "Column33", "Column34", "Column35", "Column36", "Column37", "Column38", "Column39", "Column40", "Column41", "Column42"}),
+    #"Removed Blank Rows" = Table.SelectRows(#"Removed Columns", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {"", null}))),
+   #"Changed Type2" = Table.TransformColumnTypes(#"Removed Blank Rows",{{"Request Date", type date}})
+in
+    #"Changed Type2";
+
+shared IDC = let
+    Source = Excel.Workbook(Web.Contents("https://sites.inside-share2.bosch.com/sites/141786/Documents/KPIs/KPI Tracking - IDC.xlsx"), null, true),
+    IDC_Sheet = Source{[Item="IDC",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(IDC_Sheet, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Project description ", type text}, {"Phase", type text}, {"Planned Milestones#(lf)(M/DD/YY)", type date}, {"Current Milestones#(lf)(M/DD/YY)", type date}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Project Number#(lf)MMYY_XXX#(lf)#(lf)XXX is a sequential number", type text}, {"Category * (L.,M,H)", type text}, {"VS", Int64.Type}, {"Product", type text}, {"Customer/s", type text}, {"Affected finish good#(lf)BPN (xxxx.xxx.xxx)", type any}, {"Dev. Eng ", type text}, {"Support from:", type text}, {"Start of involvement date (M/DD/YY) ", type date}, {"Project End Date (M/DD/YY)", type any}, {"Contribution support", type number}, {"IDC Before implementation (TUSD/Year)", type number}, {"IDC After implementation#(lf)(TUSD/Year)", type number}, {"Savings per  IDC - EED Contribution(TUSD/Year)", type number}, {"Link", type text}, {"Comments (If available)", type text}, {"Status", type text}})
+in
+    #"Changed Type";
+
+shared RPP = let
+    Source = Excel.Workbook(Web.Contents("https://sites.inside-share2.bosch.com/sites/141786/Documents/KPIs/KPI Tracking - RPP ideas.xlsx"), null, true),
+    RPP_Sheet = Source{[Item="RPP",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(RPP_Sheet, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{" JuP1 RPP/Localization ideas", type any}, {"Column2", type text}, {"Column3", type any}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Column9", type text}, {"Column10", type text}, {"Column11", type text}, {"Column12", type text}, {"Column13", type text}, {"Column14", type text}, {"Column15", type text}, {"Column16", type text}, {"Column17", type text}, {"Column18", type text}, {"Column19", type text}, {"Column20", type any}, {"Column21", type text}, {"Column22", type text}, {"Column23", type any}, {"Column24", type any}, {"Column25", type any}, {"Column26", type any}}),
+   #"Promoted Headers1" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers1",{{"Column1", type any}, {"Column2", type text}, {"Column3", type any}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Column9", type text}, {"Column10", type text}, {"Column11", type text}, {"Column12", type text}, {"Column13", type text}, {"Column14", type text}, {"Column15", type text}, {"Column16", type text}, {"Column17", type text}, {"Column18", type text}, {"Column19", type text}, {"Column20", type any}, {"Column21", type text}, {"Column22", type text}, {"Column23", type any}, {"Column24", type any}, {"Column25", type any}, {"Column26", type any}}),
+    #"Promoted Headers2" = Table.PromoteHeaders(#"Changed Type1", [PromoteAllScalars=true]),
+    #"Changed Type2" = Table.TransformColumnTypes(#"Promoted Headers2",{{"VS", Int64.Type}, {"Product", type text}, {"All Affected plants", type any}, {"AE/EED Engineer", type text}, {"Localization/RPP", type text}, {"Source", type text}, {"Measure (Small description)", type text}, {"Status", type text}, {"Complexity", type text}, {"Type of contribution", type text}, {"Fill out ONLY if AE/EED is coordinating ", type text}, {"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Implementation date (MM/DD/YY)", type any}, {"Competence Owner (Support)", type text}, {"Link to MS Project (If available)", type text}, {"Contribution in TUSD (1st year)", type any}, {"Contribution in TUSD (2nd year)", type any}, {"% rate", type number}, {"Contribution for  EED3 in TUSD", type number}}),
+    #"Replaced Value" = Table.ReplaceValue(#"Changed Type2",null,0,Replacer.ReplaceValue,{"VS"}),
+    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value",null,0,Replacer.ReplaceValue,{"Product", "All Affected plants", "AE/EED Engineer", "Localization/RPP", "Source", "Measure (Small description)", "Status", "Complexity", "Type of contribution", "Fill out ONLY if AE/EED is coordinating ", "Column1", "Column2", "Column3", "Column4", "Column5", "Column6", "Column7", "Column8", "Implementation date (MM/DD/YY)", "Competence Owner (Support)", "Link to MS Project (If available)", "Contribution in TUSD (1st year)", "Contribution in TUSD (2nd year)", "% rate", "Contribution for  EED3 in TUSD"})
+in
+    #"Replaced Value1";
+
+shared #"PAVs & PTS" = let
+    Source = Excel.Workbook(Web.Contents("https://sites.inside-share2.bosch.com/sites/141786/Documents/KPIs/KPI Tracking - PAV.xlsx"), null, true),
+    #"PAVs & PTS_Sheet" = Source{[Item="PAVs & PTS",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(#"PAVs & PTS_Sheet", [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"All initial project information may be input by the first engineer to get the request.", type any}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Column9", type text}, {"Column10", type text}, {"Column11", type text}, {"Column12", type any}, {"Column13", type text}, {"Promise dates", type any}, {"Column16", type any}, {"Column17", type any}, {"Column18", type any}, {"Column19", type any}, {"Column20", type any}, {"Column21", type any}, {"Actual dates", type any}, {"Column24", type any}, {"Column25", type any}, {"Column26", type text}, {"Column27", type any}, {"Column28", type any}, {"Column29", type text}}),
+    #"Promoted Headers1" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers1",{{"Column1", type any}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Column9", type text}, {"Column10", type text}, {"Column11", type text}, {"Column12", type any}, {"Column13", type text}, {"Column14", type any}, {"Column15", type text}, {"Column16", type any}, {"Column17", type any}, {"Column18", type any}, {"Column19", type any}, {"Column20", type any}, {"Column21", type any}, {"Column22", type any}, {"Column23", type text}, {"Column24", type any}, {"Test Engineer", type any}, {"Column27", type any}, {"Test Engineer_1", type any}}),
+    #"Promoted Headers2" = Table.PromoteHeaders(#"Changed Type1", [PromoteAllScalars=true]),
+    #"Changed Type2" = Table.TransformColumnTypes(#"Promoted Headers2",{{"#", Int64.Type}, {"Engineer", type text}, {"BU", type text}, {"Product", type text}, {"Customer", type text}, {"Project / Platform", type text}, {"MCR#(lf)Project Number", type text}, {"PM or TPM", type text}, {"Software Contact#(lf)(Optional)", type text}, {"BPN (xxxx.xxx.xxx)*", type text}, {"PAV#(lf)(xxxx.xxx.xxx)*", type text}, {"PAV Rev.#(lf)(xx)", Int64.Type}, {"New Release / Update / FPY", type text}, {"Requirement was received", type date}, {"All dates were discussed and agreed? (Y/N)", type text}, {"Software", type date}, {"Software#(lf)Rescheduled", type any}, {"Input sheet", type date}, {"Input sheet#(lf)Rescheduled", type any}, {"PTS/PAV#(lf)Expected", type date}, {"PTS/PAV#(lf)Expected Rescheduled", type any}, {"SW available", type date}, {"SW FPY#(lf)(Pass/Fail)", type text}, {"Final SW delivery date if FPY=fail", type any}, {"Input sheet_1", type date}, {"Input sheet#(lf)FPY (Pass/Fail)", type text}, {"Final Input sheet#(lf)if FPY failed", type any}, {"PTS/PAV available", type date}, {"Comments", type text}})
+in
+    #"Changed Type2";
+
+shared #"Problem Solving" = let
+    Source = Excel.Workbook(Web.Contents("https://sites.inside-share2.bosch.com/sites/141786/Documents/KPIs/KPI Tracking - PS.xlsx"), null, true),
+    #"Problem Solving_Sheet" = Source{[Item="Problem Solving",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(#"Problem Solving_Sheet", [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"No.", Int64.Type}, {"Team ", type text}, {"Leader", type text}, {"Project", type text}, {"Junta Inicial", type date}, {"D1", type date}, {"D2", type date}, {"D3", type date}, {"D4", type date}, {"D5", type any}, {"D6", type any}, {"D7", type date}, {"D8", type date}, {"Days Problem Solving", Int64.Type}, {"Content", type number}, {"KPI", type text}, {"Link a 8D", type any}})
+in
+    #"Changed Type";
+
+shared #"BES-PE" = let
+    Source = Excel.Workbook(Web.Contents("https://sites.inside-share2.bosch.com/sites/141786/Documents/KPIs/KPI Tracking PE.xlsx"), null, true),
+    #"BES-PE_Sheet" = Source{[Item="BES-PE",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(#"BES-PE_Sheet", [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"No.", Int64.Type}, {"Team ", type text}, {"Owner", type text}, {"Project", type text}, {"Concepto", type text}, {"Derivation of #(lf)Product Requirements", Int64.Type}, {"System Structuring", type number}, {"Focus Analysis", type number}, {"Design Elements: modelling, active parameters, cause effect relationships", type number}, {"Process Chain ", type number}, {"Design for Reliability", type number}, {"Q1", type number}, {"Q2", type any}, {"Q3", type any}, {"Q4", type any}, {"KPIs", type text}})
+in
+    #"Changed Type";
+
+shared Budget = let
+    Source = Excel.Workbook(File.Contents("\\bosch.com\dfsrb\DfsUS\loc\JU1\Dept\ABEDE3\Restricted\Team Leaders\LEAN\KPI\Follow - up\2020\Power BI2020.10.xlsx"), null, true),
+    Budget_Sheet = Source{[Item="Budget",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(Budget_Sheet, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Column1", type text}, {"Target 2020", type number}, {"Actuals", type number}, {"Diference", type number}, {"Column5", type any}, {"Column6", type any}, {"Column7", type any}, {"Column8", type any}, {"Column9", type any}})
+in
+    #"Changed Type";
+
+shared CpTM = let
+    Source = Excel.Workbook(File.Contents("\\bosch.com\dfsrb\DfsUS\loc\JU1\Dept\ABEDE3\Restricted\Team Leaders\LEAN\KPI\Follow - up\2020\Power BI2020.09.xlsx"), null, true),
+    CpTM_Sheet = Source{[Item="CpTM",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(CpTM_Sheet, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Equipo", type text}, {"Q1", type number}, {"Q2", type number}, {"Q3", type number}, {"Q4", type any}, {"Target", Int64.Type}})
+in
+    #"Changed Type";
+
+shared Export = let
+    Source = Excel.Workbook(File.Contents("\\bosch.com\dfsrb\DfsUS\loc\JU1\Dept\ABEDE3\Restricted\Team Leaders\LEAN\KPI\Follow - up\2020\Power BI2020.10.xlsx"), null, true),
+    Export_Sheet = Source{[Item="Export",Kind="Sheet"]}[Data],
+    #"Changed Type" = Table.TransformColumnTypes(Export_Sheet,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type any}, {"Column9", type any}, {"Column10", type any}, {"Column11", type any}, {"Column12", type any}, {"Column13", type any}, {"Column14", type any}, {"Column15", type any}, {"Column16", type any}, {"Column17", type any}, {"Column18", type any}, {"Column19", type any}, {"Column20", type any}, {"Column21", type any}, {"Column22", type any}, {"Column23", type any}, {"Column24", type any}, {"Column25", type any}, {"Column26", type any}, {"Column27", type any}, {"Column28", type any}, {"Column29", type any}}),
+    #"Promoted Headers" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers",{{"BU", type text}, {"Product", type text}, {"Resources", type text}, {"Project Number", type text}, {"Project Description", type text}, {"Org Office", type text}, {"Resource Group", type text}, {"Jan 2020", type number}, {"Jan $", type number}, {"Feb 2020", type number}, {"Feb $", type number}, {"Mar 2020", type number}, {"Mar $", type number}, {"Apr 2020", type number}, {"Apr $", type number}, {"May 2020", type number}, {"May $", type number}, {"Jun 2020", type number}, {"Jun $", type number}, {"Jul 2020", type number}, {"Jul $", type number}, {"Aug 2020", type number}, {"Aug $", type number}, {"Sep 2020", type number}, {"Sep $", type number}, {"Oct 2020", type number}, {"Oct $", type number}, {"Total Hrs", type number}, {"Total $", type number}})
+in
+    #"Changed Type1";
+
+shared #"Fillig Excel MCR" = let
+    Source = Excel.Workbook(File.Contents("\\bosch.com\dfsrb\DfsUS\loc\JU1\Dept\ABEDE3\Restricted\Team Leaders\LEAN\KPI\Follow - up\2020\Power BI2020.09.xlsx"), null, true),
+    #"Fillig Excel MCR_Sheet" = Source{[Item="Fillig Excel MCR",Kind="Sheet"]}[Data],
+    #"Changed Type" = Table.TransformColumnTypes(#"Fillig Excel MCR_Sheet",{{"Column1", type text}, {"Column2", type text}}),
+    #"Promoted Headers" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers",{{"Team", type text}, {"Excel", type text}})
+in
+    #"Changed Type1";
+
+shared MCR = let
+    Source = Excel.Workbook(File.Contents("\\bosch.com\dfsrb\DfsUS\loc\JU1\Dept\ABEDE3\Restricted\Team Leaders\LEAN\KPI\Follow - up\2020\Power BI2020.10.xlsx"), null, true),
+    MCR_Sheet = Source{[Item="MCR",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(MCR_Sheet, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Column1", type text}, {"Target KPIs", Int64.Type}, {"MCR", Int64.Type}, {"Column4", type any}, {"Column5", type any}, {"Column6", type any}, {"Column7", type any}, {"Column8", type any}, {"Column9", type any}})
+in
+    #"Changed Type";
+
+shared Training = let
+    Source = Excel.Workbook(File.Contents("\\bosch.com\dfsrb\DfsUS\loc\JU1\Dept\ABEDE3\Restricted\Team Leaders\LEAN\KPI\Follow - up\2020\Power BI2020.09.xlsx"), null, true),
+    Training_Sheet = Source{[Item="Training",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(Training_Sheet, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"BP 2019", Int64.Type}, {"Real", type any}})
+in
+    #"Changed Type";
+
+shared Trips = let
+    Source = Excel.Workbook(File.Contents("\\bosch.com\dfsrb\DfsUS\loc\JU1\Dept\ABEDE3\Restricted\Team Leaders\LEAN\KPI\Follow - up\2020\Power BI2020.09.xlsx"), null, true),
+    Trips_Sheet = Source{[Item="Trips",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(Trips_Sheet, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"BP 2019", Int64.Type}, {"Real", Int64.Type}})
+in
+    #"Changed Type";
+
+shared #"Errors in BoM Release (2)" = let
+Source = #"BoM Release",
+#"Added Index" = Table.AddIndexColumn(Source, "Row Number" ,1),
+  #"Kept Errors" = Table.SelectRowsWithErrors(#"Added Index", {"#", "Originator*", "BU", "Product", "Customer", "BOM Coordination Effort Category * (L,M,H)", "Project / Platform", "MCR#(lf)Project Number", "PM or TPM", "ECU-PCM#(lf)(Optional)", "RACE", "BPN (xxxx.xxx.xxx)*", "MRD#(lf)(Optional)", "Drawing was required ?*", "Drawing Effort Category   * (L,M,H)", "Requirement was received", "All dates were discussed and agreed? (Y/N)", "All dates were discussed and agreed? (Y/N)_1", "Software*", "PTS/PAV input sheet", "PTS/PAV#(lf)Expected", "AGZ in SAP", "BoM st 30* Promise", "BoM st 40* Promise", "SW available* Promise", "PTS/PAV input sheet_2 Promise", "PTS/PAV available Promise", "Manager approval for drawings", "EWO (GM) / CN (Ford) / Ownership (FCA) in correct status or available", "AGZ available in SAP", "CWR Sent date", "BoM st 30* Actuals", "BoM st 40* Actuals", "Comments"}),
+#"Reordered Columns" = Table.ReorderColumns(#"Kept Errors", {"Row Number", "#", "Originator*", "BU", "Product", "Customer", "BOM Coordination Effort Category * (L,M,H)", "Project / Platform", "MCR#(lf)Project Number", "PM or TPM", "ECU-PCM#(lf)(Optional)", "RACE", "BPN (xxxx.xxx.xxx)*", "MRD#(lf)(Optional)", "Drawing was required ?*", "Drawing Effort Category   * (L,M,H)", "Requirement was received", "All dates were discussed and agreed? (Y/N)", "All dates were discussed and agreed? (Y/N)_1", "Software*", "PTS/PAV input sheet", "PTS/PAV#(lf)Expected", "AGZ in SAP", "BoM st 30* Promise", "BoM st 40* Promise", "SW available* Promise", "PTS/PAV input sheet_2 Promise", "PTS/PAV available Promise", "Manager approval for drawings", "EWO (GM) / CN (Ford) / Ownership (FCA) in correct status or available", "AGZ available in SAP", "CWR Sent date", "BoM st 30* Actuals", "BoM st 40* Actuals", "Comments"})
+in
+  #"Reordered Columns"
+;
+
+shared #"Errors in ECR" = let
+Source = ECR,
+#"Added Index" = Table.AddIndexColumn(Source, "Row Number" ,1),
+  #"Kept Errors" = Table.SelectRowsWithErrors(#"Added Index", {"#", "BU", "Product", "Customer & Project", "MCR", "Originator*", "ECR*", "Affected finish good*#(lf)BPN (xxxx.xxx.xxx)", "Type* (EC /EO)", "Category* (L,M,H)", "Short reason*", "CWR / Leepa", "Revision with TL", "St. 10", "St. 20*", "First Pass Yield ECR? (Filled by Manager)*", "First Pass Yield BOMs? (Filled by Manager)*", "St. 22", "All documents available ", "St. 24", "St. 25", "St. 30*", "St. 40", "Status#(lf)Open/Closed/Cancelled", "Comments"}),
+#"Reordered Columns" = Table.ReorderColumns(#"Kept Errors", {"Row Number", "#", "BU", "Product", "Customer & Project", "MCR", "Originator*", "ECR*", "Affected finish good*#(lf)BPN (xxxx.xxx.xxx)", "Type* (EC /EO)", "Category* (L,M,H)", "Short reason*", "CWR / Leepa", "Revision with TL", "St. 10", "St. 20*", "First Pass Yield ECR? (Filled by Manager)*", "First Pass Yield BOMs? (Filled by Manager)*", "St. 22", "All documents available ", "St. 24", "St. 25", "St. 30*", "St. 40", "Status#(lf)Open/Closed/Cancelled", "Comments"})
+in
+  #"Reordered Columns"
+;
+
+shared #"Errors in RA" = let
+Source = RA,
+#"Added Index" = Table.AddIndexColumn(Source, "Row Number" ,1),
+  #"Kept Errors" = Table.SelectRowsWithErrors(#"Added Index", {"RA #", "VS", "Product", "Affected finish good#(lf)BPN (xxxx.xxx.xxx)", "Type", "Customer", "Deviation", "Request Date", "Due Date", """Finish"" date", "Creator", "Cost ", "Workon #", "Risk Level#(lf)(L|M|H)", "PPMs", "Length*", "Revision with TL #(lf)(Date/Dates) ", "Revision with Manager #(lf)(Date/Dates) ", "FPY (TL)", "FPY(Manager)", "Complexity ", "Comments (improvements)", "Link to RA"}),
+#"Reordered Columns" = Table.ReorderColumns(#"Kept Errors", {"Row Number", "RA #", "VS", "Product", "Affected finish good#(lf)BPN (xxxx.xxx.xxx)", "Type", "Customer", "Deviation", "Request Date", "Due Date", """Finish"" date", "Creator", "Cost ", "Workon #", "Risk Level#(lf)(L|M|H)", "PPMs", "Length*", "Revision with TL #(lf)(Date/Dates) ", "Revision with Manager #(lf)(Date/Dates) ", "FPY (TL)", "FPY(Manager)", "Complexity ", "Comments (improvements)", "Link to RA"})
+in
+  #"Reordered Columns"
+;
+
+shared #"Errors in RPP" = let
+Source = RPP,
+  #"Detected Type Mismatches" = let
+    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),
+    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),
+    fieldNames = Record.FieldNames(recordTypeFields),
+    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),
+    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if Value.Is(v, fieldTypes{i}) then v else error [Message = "The type of the value does not match the type of the column.", Detail = v], fieldTypes{i}})
+in
+    Table.TransformColumns(Source, pairs),
+  #"Added Index" = Table.AddIndexColumn(#"Detected Type Mismatches", "Row Number" ,1),
+  #"Kept Errors" = Table.SelectRowsWithErrors(#"Added Index", {"VS*", "Product*", "All Affected plants *", "AE/EED Engineer*", "Localization/RPP/Seafreight *", "Source", "Measure (Small description)", "Status*", "Complexity*", "Type of contribution *", "Fill out ONLY if AE/EED is coordinating ", "Column12", "Column13", "Column14", "Column15", "Column16", "Column17", "Column18", "Column19", "Implementation date (MM/DD/YY) *", "Competence Owner (Support) *", "Link to MS Project (If available)", " Contribution in TUSD (2019) *", " Contribution in TUSD (2020) *", " Contribution in TUSD (2021) *", "Contribution in TUSD (2022)", "Contribution in TUSD (2023)", "% rate", "Contribution for  EED3 in TUSD (2019)*", "Contribution for  EED3 in TUSD (2020)*", "Contribution for  EED3 in TUSD (2021)*", "Contribution for  EED3 in TUSD (2022)*", "Contribution for  EED3 in TUSD (2023)*", "Comments"}),
+  #"Reordered Columns" = Table.ReorderColumns(#"Kept Errors", {"Row Number", "VS*", "Product*", "All Affected plants *", "AE/EED Engineer*", "Localization/RPP/Seafreight *", "Source", "Measure (Small description)", "Status*", "Complexity*", "Type of contribution *", "Fill out ONLY if AE/EED is coordinating ", "Column12", "Column13", "Column14", "Column15", "Column16", "Column17", "Column18", "Column19", "Implementation date (MM/DD/YY) *", "Competence Owner (Support) *", "Link to MS Project (If available)", " Contribution in TUSD (2019) *", " Contribution in TUSD (2020) *", " Contribution in TUSD (2021) *", "Contribution in TUSD (2022)", "Contribution in TUSD (2023)", "% rate", "Contribution for  EED3 in TUSD (2019)*", "Contribution for  EED3 in TUSD (2020)*", "Contribution for  EED3 in TUSD (2021)*", "Contribution for  EED3 in TUSD (2022)*", "Contribution for  EED3 in TUSD (2023)*", "Comments"})
+in
+  #"Reordered Columns"
+;
+
+shared Montly = let
+    Source = Excel.Workbook(File.Contents("\\bosch.com\dfsrb\DfsUS\loc\JU1\Dept\ABEDE3\Restricted\Team Leaders\LEAN\KPI\Follow - up\2020\Power BI2020.10.xlsx"), null, true),
+    #"Montly _Sheet" = Source{[Item="Montly ",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(#"Montly _Sheet", [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Column1", type text}, {"Valores", type number}, {"Fecha", type date}, {"Column4", type any}})
+in
+    #"Changed Type";
+
+shared #"RPP_Localization ideas list V00" = let
+    Source = Excel.Workbook(File.Contents("\\sites.inside-share2.bosch.com@SSL\DavWWWRoot\sites\141786\Documents\KPIs\KPI Tracking - RPP ideas.xlsx"), null, true),
+    #"RPP_Localization ideas list V00_Sheet" = Source{[Item="RPP_Localization ideas list V00",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(#"RPP_Localization ideas list V00_Sheet", [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{" JuP1 RPP/Localization ideas", type any}, {"Column2", type text}, {"Column3", type any}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Column9", type text}, {"Column10", type text}, {"Column11", type text}, {"Column12", type text}, {"Contribution for  EED3 in TUSD (2022)*", type any}, {"Contribution for  EED3 in TUSD (2022)*_1", type text}, {"Column15", type text}, {"Column16", type any}, {"Column17", type any}, {"Column18", type any}, {"Column19", type any}, {"Column20", type any}, {"Column21", type any}, {"Column22", type any}, {"Column23", type any}, {"Column24", type any}, {"Column25", type any}, {"Column26", type any}, {"Column27", type text}}),
+    #"Promoted Headers1" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers1",{{"Column1", type any}, {"Column2", type text}, {"Column3", type any}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Column9", type text}, {"Column10", type text}, {"Column11", type text}, {"Column12", type text}, {"Contribution for  EED3 in TUSD (2022)*", type any}, {"Column14", type text}, {"Column15", type text}, {"Column16", type any}, {"Column17", type any}, {"Column18", type any}, {"Column19", type any}, {"Column20", type any}, {"Column21", type any}, {"Column22", type any}, {"Column23", type any}, {"Column24", type any}, {"Column25", type any}, {"Column26", type any}, {"Column27", type text}}),
+    #"Promoted Headers2" = Table.PromoteHeaders(#"Changed Type1", [PromoteAllScalars=true]),
+    #"Changed Type2" = Table.TransformColumnTypes(#"Promoted Headers2",{{"VS*", type any}, {"Product*", type text}, {"All Affected plants *", type any}, {"AE/EED Engineer*", type text}, {"Localization/RPP/Seafreight *", type text}, {"Source", type text}, {"Measure (Small description)", type text}, {"Status*", type text}, {"Complexity*", type text}, {"Type of contribution *", type text}, {"Fill out ONLY if AE/EED is coordinating ", type text}, {"Column12", type text}, {"Implementation date (MM/DD/YY) *", type any}, {"Competence Owner (Support) *", type text}, {"Link to MS Project (If available)", type text}, {" Contribution in TUSD (2019) *", type any}, {" Contribution in TUSD (2020) *", type any}, {" Contribution in TUSD (2021) *", type number}, {"Contribution in TUSD (2022)", type number}, {"Contribution in TUSD (2023)", type any}, {"% rate", type number}, {"Contribution for  EED3 in TUSD (2019)*", type any}, {"Contribution for  EED3 in TUSD (2020)*", type any}, {"Contribution for  EED3 in TUSD (2021)*", type number}, {"Contribution for  EED3 in TUSD (2022)*", type any}, {"Contribution for  EED3 in TUSD (2023)*", type any}, {"Comments", type text}})
+in
+    #"Changed Type2";
+
+shared PCN = let
+    Source = Excel.Workbook(File.Contents("\\sites.inside-share2.bosch.com@SSL\DavWWWRoot\sites\141786\Documents\KPIs\KPI Tracking - Component Change (PCN).xlsx"), null, true),
+    PCN_Sheet = Source{[Item="PCN",Kind="Sheet"]}[Data],
+    #"Changed Type" = Table.TransformColumnTypes(PCN_Sheet,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Column9", type text}, {"Column10", type text}, {"Column11", type text}, {"Column12", type text}, {"Column13", type text}, {"Column14", type text}}),
+    #"Promoted Headers" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers",{{"Component Change (PCN)", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Column9", type text}, {"Column10", type text}, {"Column11", type text}, {"Column12", type text}, {"Column13", type text}, {"Column14", type text}}),
+    #"Promoted Headers1" = Table.PromoteHeaders(#"Changed Type1", [PromoteAllScalars=true]),
+    #"Changed Type2" = Table.TransformColumnTypes(#"Promoted Headers1",{{"#", type text}, {"SOPL Task Num", type text}, {"BU", type text}, {"Product", type text}, {"Customer", type text}, {"Project / Platform", type text}, {"Category* ", type text}, {"Initial Date", type text}, {"MCR#(lf)Project Number", type text}, {"EED-MX Contact", type text}, {"Short Change Description", type text}, {"Reason of Change", type text}, {"Finalization Date", type text}, {"Link", type text}})
+in
+    #"Changed Type2";
+
+shared #"2020" = let
+    Source = Excel.Workbook(File.Contents("\\sites.inside-share2.bosch.com@SSL\DavWWWRoot\sites\141786\Documents\KPIs\KPI Tracking - EAI.xlsx"), null, true),
+    #"2020_Sheet" = Source{[Item="2020",Kind="Sheet"]}[Data],
+    #"Changed Type" = Table.TransformColumnTypes(#"2020_Sheet",{{"Column1", type any}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", Int64.Type}, {"Column8", Int64.Type}, {"Column9", Int64.Type}, {"Column10", Int64.Type}, {"Column11", Int64.Type}, {"Column12", Int64.Type}, {"Column13", Int64.Type}, {"Column14", Int64.Type}, {"Column15", Int64.Type}, {"Column16", Int64.Type}, {"Column17", Int64.Type}, {"Column18", Int64.Type}, {"Column19", type any}, {"Column20", type text}, {"Column21", type any}, {"Column22", type text}, {"Column23", type text}, {"Column24", type any}, {"Column25", type any}, {"Column26", type any}, {"Column27", type text}}),
+    #"Promoted Headers" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers",{{"VS", type any}, {"Product", type text}, {"Technology", type text}, {"Topic", type text}, {"Mechanical Eng. ", type text}, {"EAI Support", type text}, {"1", type number}, {"2", type number}, {"3", type number}, {"4", type number}, {"5", type number}, {"6", type number}, {"7", type number}, {"8", type number}, {"9", type number}, {"10", type number}, {"11", type number}, {"12", type number}, {"Date", type date}, {"Level of support", type text}, {"W/Hours", Int64.Type}, {"RA?", type text}, {"Status", type text}, {"Column24", type any}, {"Column25", type any}, {"Column26", type any}, {"Column27", type text}})
+in
+    #"Changed Type1";
+
+shared SuperOPL = let
+    Source = Excel.Workbook(File.Contents("\\sites.inside-share2.bosch.com@SSL\DavWWWRoot\sites\141786\Documents\KPIs\KPI Tracking - DRBFM.xlsx"), null, true),
+    SuperOPL_Sheet = Source{[Item="SuperOPL",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(SuperOPL_Sheet, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Super OPL - excel export | OPL: EED DRBFM Competence (187297)", type any}, {"Column2", type text}, {"Column3", type any}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Column9", type text}, {"Column10", type text}, {"Column11", type text}, {"Column12", type text}, {"Column13", type any}, {"Column14", type any}, {"Column15", type text}, {"Column16", type text}, {"Column17", type text}, {"Column18", type text}, {"Column19", type text}, {"Column20", type any}, {"Column21", type text}, {"Column22", type text}, {"Column23", type text}, {"Column24", type text}, {"Column25", type text}, {"Column26", type text}, {"Column27", type text}, {"Column28", type text}, {"Column29", type text}, {"Column30", type text}, {"Column31", type text}, {"Column32", type text}, {"Column33", type any}, {"Column34", type text}, {"Column35", type text}, {"Column36", type any}, {"Column37", type any}, {"Column38", type any}, {"Column39", type any}, {"Column40", type any}, {"Column41", type any}, {"Column42", type any}, {"Column43", type any}, {"Column44", type any}, {"Column45", type any}, {"Column46", type any}, {"T", type text}}),
+    #"Promoted Headers1" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers1",{{"ID (leave blank by new tasks)", Int64.Type}, {"Created (leave blank by new tasks)", type text}, {"Task start (dd.mm.yyyy)", type date}, {"T… Task#(lf)D… Decision#(lf)I… Information", type text}, {"Owner#(lf)(NT user name or format ""Mustermann Max (RBCB/ENG)"")", type text}, {"Prio", type text}, {"Subject", type text}, {"Description", type text}, {"Responsible#(lf)(NT user name or format ""Mustermann Max (RBCB/ENG)"")", type text}, {"Notes#(lf)(can't be imported back)", type text}, {"Category", type text}, {"Source", type text}, {"Due date#(lf)(dd.mm.yyyy)", type date}, {"Closing date#(lf)(dd.mm.yyyy)", type date}, {"Result notes", type text}, {"Parent ID#(lf)(""x"" if new child and parent is above)", type text}, {"iPEP ID", type text}, {"iPEP - critical path", type text}, {"Confidential", type text}, {"OPL number (not imported back)", Int64.Type}, {"OPL name#(lf)(not imported back)", type text}, {"N1", type text}, {"N2", type text}, {"N3", type text}, {"N4", type text}, {"N5", type text}, {"Impact Analysis", type text}, {"Risk Finding", type text}, {"Risk Solving", type text}, {"Participants", type text}, {"Conclusion", type text}, {"Invested Effort", type text}, {"Finish date", type date}, {"DT1", type text}, {"DT2", type text}, {"Column36", type any}, {"Column37", type any}, {"Column38", type any}, {"Column39", type any}, {"Column40", type any}, {"Column41", type any}, {"Column42", type any}, {"Column43", type any}, {"Column44", type any}, {"Column45", type any}, {"Column46", type any}, {"I", type text}})
+in
+    #"Changed Type1";
